@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(new JakeJonApp());
 
-class MyApp extends StatelessWidget {
+class JakeJonApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
       return new MaterialApp(
         title: "Jake Jon",
-        home: new Text("Jake says Hi!"),
+        home: new Scaffold(
+          appBar: AppBar(
+            title: new Text("Jake Jon AppBar Title"),
+          ),
+          backgroundColor: Colors.deepPurple,
+          body: new Text("Jake Scaffold body!"),
+          //bottomNavigationBar: new BottomNavigationBar(items: null)
+        ),
+
       );
 //      Text("Jake");
 
